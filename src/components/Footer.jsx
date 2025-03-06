@@ -2,10 +2,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#fff2e2] text-black text-sm">
       <div className="mx-auto px-6 pt-10 pb-6">
-        <div className=" grid grid-cols-2">
+        <div className=" grid grid-cols-1 lg:grid-cols-2">
           {/* Left Section */}
-          <div className=" border-gray-300 pb-8 border-r">
-            <div>
+          <div className=" border-gray-300 pb-8 lg:border-r border-b grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-1 max-lg:items-center w-full">
+            <div className="lg:pr-8">
               <img
                 src="https://www.haldiram.com/Haldiram_Logo-9GN.png"
                 alt="Haldiram's"
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             {/* Corporate Office */}
-            <div className="grid grid-cols-2">
+            <div className="grid lg:grid-cols-2 grid-cols-1 md:justify-items-end">
               <div>
                 <h3 className="text-xl my-6 mb-4">CORPORATE OFFICE</h3>
                 <p className="text-gray-700">
@@ -43,7 +43,7 @@ export default function Footer() {
                   Delhi, 110044
                 </p>
               </div>
-              <div className="flex self-end justify-end gap-4 pr-14 ">
+              <div className="flex self-end lg:justify-end gap-4 pr-14 max-lg:mt-6 ">
                 {/* facebook */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,8 +111,8 @@ export default function Footer() {
           </div>
 
           {/* right Links */}
-          <div className="flex justify-center pl-20">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 py-8">
+          <div className="flex lg:justify-center w-full lg:pl-20 ">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 py-8 w-full">
               <div>
                 <h3 className=" text-xl mb-8">Menu</h3>
                 <ul className="mt-2 space-y-4 text-gray-700">
