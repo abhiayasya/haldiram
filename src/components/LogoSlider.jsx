@@ -21,7 +21,7 @@ const LogoSlider = () => {
         <img src={logopointer} width={222} height={16} alt="" />
       </div>
 
-      <div className='overflow-hidden relative w-full h-[150px] py-4 flex items-center'>
+      <div className='overflow-hidden relative w-full h-[150px] flex items-center'>
         <motion.div
           className='flex space-x-5'
           animate={{ x: ['0%', '-100%'] }}
