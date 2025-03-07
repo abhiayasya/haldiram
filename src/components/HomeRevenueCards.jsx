@@ -2,7 +2,7 @@ import React from "react";
 import revenueCard1 from "../assets/revenue1.png";
 import revenueCard2 from "../assets/revenue2.png";
 
-export const REVENUE_JSON = [
+const REVENUE_JSON = [
   {
     supTag: "$01",
     tagline: "BILLION",
