@@ -3,6 +3,7 @@ import LogoSlider from '../components/LogoSlider/'
 import VisionSection from '../components/VisionSection'
 import Country from '../components/Country'
 import AboutBannerTeaser from '../components/AboutBannerTeaser'
+import HomeRevenueCards from '../components/HomeRevenueCards'
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
         <VisionSection/>
         <Country/>
         <AboutBannerTeaser/>
+        <HomeRevenueCards/>
     </div>
   )
 }

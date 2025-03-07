@@ -2,7 +2,7 @@ import React from "react";
 import vision from "../assets/vision.png";
 import mission from "../assets/mission.png";
 
-export const LOGOSLIDERJSON = [
+export const LOGO_SLIDER_JSON = [
   {
     tagline: "Our Vision",
     img: vision,
@@ -35,7 +35,7 @@ const VisionSection = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-10">
-        {LOGOSLIDERJSON.map((logoslider, index) => (
+        {LOGO_SLIDER_JSON.map((logoslider, index) => (
           <div
             className="flex-1 bg-white p-4 rounded-2xl shadow-md border border-gray-200 flex flex-col"
             key={index}

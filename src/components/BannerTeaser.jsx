@@ -1,13 +1,13 @@
 export default function BannerTeaser() {
     return (
-      <section className="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
+      <section className="relative w-full h-screen bg-cover bg-center flex items-end justify-center text-white"
         style={{ backgroundImage: "url('https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg')" }}>
         
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 "></div>
   
         {/* Content */}
-        <div className="relative z-10 text-center px-6 md:px-10 max-w-3xl">
+        <div className="relative z-10 text-center px-6 md:px-10 max-w-3xl pb-6">
           <img src="https://www.haldiram.com/Haldiram_Logo-9GN.png" alt="Haldiram's" className="w-40 mx-auto mb-4" />
   
           <h1 className="text-2xl md:text-4xl font-semibold leading-tight">
