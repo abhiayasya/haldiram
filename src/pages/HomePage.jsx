@@ -1,9 +1,10 @@
 import React from 'react'
+import BrandSlider from '../components/slider/BrandSlider'
 
 const HomePage = () => {
   return (
     <div>
-      HomePage
+      <BrandSlider/>
     </div>
   )
 }
