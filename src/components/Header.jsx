@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+
 import { Menu, X, Globe, Mail, Search } from "lucide-react";
 import HaldiramLogo from "../assets/icon/Haldiram_Logo.webp";
+import { useState } from "react";
 
 const menuItems = [
   { name: "BUSINESS", link: "/business" },
@@ -12,33 +13,13 @@ const menuItems = [
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"
-      } py-4 px-6`}
-    >
+    <header className="bg-transparent text-white py-4 px-6 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between gap-5">
-        {/ Left Section (Logo + Mobile Menu Button) /}
+        {/* Left Section (Logo + Mobile Menu Button) */}
         <div className="flex items-center justify-between gap-5 max-w-[350px] w-full">
-          {/ Mobile Menu Button /}
+          {/* Mobile Menu Button */}
           <button
             className="md:hidden mr-3 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -46,7 +27,7 @@ const Header = () => {
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          {/ Logo /}
+          {/* Logo */}
           <img
             src={HaldiramLogo}
             alt="Logo"
@@ -54,46 +35,47 @@ const Header = () => {
           />
         </div>
 
-        {/ Desktop Navigation (Center) /}
+        {/* Desktop Navigation (Center) */}
         <div className="flex items-center justify-between gap-10">
           <nav className="hidden md:flex items-center gap-5 lg:gap-10">
             {menuItems.map((item, index) => (
               <a
                 key={index}
                 href={item.link}
-                className={`hover:text-gray-500 md:text-[13px] lg:text-base font-semibold text-nowrap ${
-                  isScrolled ? "text-black" : "text-white"
-                }`}
+                className="hover:text-gray-300 md:text-[13px] lg:text-base font-semibold text-nowrap"
               >
                 {item.name}
               </a>
             ))}
           </nav>
 
-          {/ Right Section (Icons) /}
-          <div
-            className={`flex items-center border rounded-lg px-4 py-2 backdrop-blur-md ${
-              isScrolled ? "border-black bg-gray-100" : "border-white bg-white/10"
-            }`}
-          >
-            <Globe className={`w-5 h-5 mx-2 cursor-pointer ${isScrolled ? "text-black" : "text-white"}`} />
-            <span className={`border-l ${isScrolled ? "border-black" : "border-white"} h-5`}></span>
-            <Mail className={`w-5 h-5 mx-2 cursor-pointer ${isScrolled ? "text-black" : "text-white"}`} />
-            <span className={`border-l ${isScrolled ? "border-black" : "border-white"} h-5`}></span>
-            <Search className={`w-5 h-5 mx-2 cursor-pointer ${isScrolled ? "text-black" : "text-white"}`} />
+          {/* Right Section (Icons) */}
+          <div className="flex items-center border border-white rounded-lg px-4 py-2 backdrop-blur-md bg-white/10">
+            <Globe className="w-5 h-5 mx-2 cursor-pointer" />
+            <span className="border-l border-white h-5"></span>
+            <Mail className="w-5 h-5 mx-2 cursor-pointer" />
+            <span className="border-l border-white h-5"></span>
+            <Search className="w-5 h-5 mx-2 cursor-pointer" />
           </div>
         </div>
       </div>
 
-      {/ Mobile Menu /}
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center space-y-6">
-          <button className="absolute top-5 right-5" onClick={() => setIsOpen(false)}>
+          <button
+            className="absolute top-5 right-5"
+            onClick={() => setIsOpen(false)}
+          >
             <X className="w-8 h-8 text-black" />
           </button>
 
           {menuItems.map((item, index) => (
-            <a key={index} href={item.link} className="text-lg font-medium hover:text-gray-500">
+            <a
+              key={index}
+              href={item.link}
+              className="text-lg font-medium hover:text-gray-500"
+            >
               {item.name}
             </a>
           ))}
