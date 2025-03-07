@@ -1,11 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import Banner from "../components/Banner";
+import LatestNewsSection from "../components/LatestNewsSection";
 const HomePage = () => {
   return (
     <div>
-      HomePage
+      <Banner />
+      <LatestNewsSection/>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
