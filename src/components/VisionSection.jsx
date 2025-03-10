@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 const VisionSection = ({data}) => {
   return (
     <div className="w-full p-7 bg-[#FAF5EF]">

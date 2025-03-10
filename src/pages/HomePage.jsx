@@ -7,6 +7,7 @@ import BrandSlider from "../components/slider/BrandSlider";
 import HeroSlider from "../components/slider/HeroSlider";
 import HomeRevenueCards from "../components/HomeRevenueCards";
 import { bannerData, brandImages, latestNewsSection, revenueJson, slides } from "../constant/global.constant";
+import SocialMediaCards from "../components/SocialMediaCards";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <LatestNewsSection data={latestNewsSection}/>
       <BannerTeaser data={bannerData} />
       <HomeRevenueCards data={revenueJson} />
+      <SocialMediaCards/>
       <section className="my-20">
         <BrandSlider data={brandImages}/>
       </section>
