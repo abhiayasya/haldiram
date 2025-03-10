@@ -1,9 +1,15 @@
 import React from "react";
 import SocialMediaCard from "./SocialMediaCrad";
+import { div } from "framer-motion/client";
+import PageHeading from "./PageHeading";
 
-const VisionMissionCard = ({data}) => {
+const VisionMissionCard = ({data, heading}) => {
   return (
-    <div className="grid lg:grid-cols-2 gap-4 my-3 mx-auto">
+    <div className="p-7">
+    <div className="vision-headings">
+       <PageHeading headings={heading}/>
+    </div>
+    <div className="grid lg:grid-cols-2 gap-4 my-3">
       {data.map((platform) => (
         <SocialMediaCard
           key={platform.id}
@@ -13,6 +19,7 @@ const VisionMissionCard = ({data}) => {
           visionMission={true}
         />
       ))}
+    </div>
     </div>
   );
 };
