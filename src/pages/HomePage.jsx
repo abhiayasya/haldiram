@@ -14,9 +14,13 @@ const HomePage = () => {
     <div>
       <HeroSlider slides={slides}/>
       <LatestNewsSection data={latestNewsSection}/>
+      <section className="mb-5">
+      <SocialMediaCards/>
+      </section>
+     
       <BannerTeaser data={bannerData} />
       <HomeRevenueCards data={revenueJson} />
-      <SocialMediaCards/>
+      
       <section className="my-20">
         <BrandSlider data={brandImages}/>
       </section>
