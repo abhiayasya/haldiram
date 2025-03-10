@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import { Menu, X, Globe, Mail, Search } from "lucide-react";
 import HaldiramLogo from "../assets/icon/Haldiram_Logo.png";
@@ -48,27 +46,21 @@ const Header = () => {
 
           {/* Desktop Navigation (Center) */}
           <div className="flex items-center justify-end gap-10 relative w-full">
-            <nav className="hidden md:flex items-center gap-5 lg:gap-10">
+            <nav
+              className="hidden md:flex items-center gap-5 lg:gap-10"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
               {menuItems.map((item, index) => (
                 <div
                   key={index}
                   className="relative"
-                  onMouseEnter={() => {
-                    if (item.name === "BRANDS") {
-                      setIsDropdownOpen(true);
-                      setIsHovered(true);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    if (item.name === "BRANDS") {
-                      setIsDropdownOpen(false);
-                      setIsHovered(false);
-                    }
-                  }}
+                  onMouseEnter={() => item.name === "BRANDS" && setIsDropdownOpen(true)}
+                  onMouseLeave={() => item.name === "BRANDS" && setIsDropdownOpen(false)}
                 >
                   <a
                     href={item.link}
-                    className={`hover:text-gray-500 md:text-[13px] lg:text-base font-semibold text-nowrap ${
+                    className={`hover:text-[#E1251B] md:text-[13px] lg:text-base font-semibold text-nowrap ${
                       isScrolled || isHovered ? "text-black" : "text-white"
                     }`}
                     onClick={(e) => item.name === "BRANDS" && e.preventDefault()}
@@ -98,14 +90,8 @@ const Header = () => {
         {isDropdownOpen && (
           <div
             className="absolute left-0 top-full w-full bg-white shadow-lg z-50 dropdown-container"
-            onMouseEnter={() => {
-              setIsDropdownOpen(true);
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              setIsDropdownOpen(false);
-              setIsHovered(false);
-            }}
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
           >
             <Dropdown />
           </div>
