@@ -1,6 +1,9 @@
 import productImg from "../assets/image.png";
 import vision from "../assets/vision.png";
 import mission from "../assets/mission.png";
+import footprint from "../assets/footprint.png";
+import footpointer from "../assets/footpointer.png";
+import bannerImage from '../assets/images/bannerImage.jpg'
 
 export const slides = [
   {
@@ -62,15 +65,6 @@ export const latestNewsSection = [
     image: productImg,
   },
 ];
-
-export const bannerData = {
-  imageUrl:
-    "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  logoUrl: "https://www.haldiram.com/Haldiram_Logo-9GN.png",
-  heading: "A Legacy Built on Excellence & Trust",
-  description:
-    "What began in a small kitchen in Bikaner, Rajasthan has grown into a global phenomenon. Haldiram has been synonymous with authenticity, quality, and innovation for over seven decades, bringing families together with every bite.",
-};
 
 export const revenueJson = [
   {
@@ -134,4 +128,22 @@ export const VISION_PAGE_HEADINGS = {
     "For over eight decades, Haldiram’s has been synonymous with authentic Indian flavours.",
   subDescription:
     "Today Haldiram’s is a beloved brand in India and a renowned ambassador of Indian cuisine worldwide.",
+};
+
+export const FOOTPRINT_DATA = {
+  overlayBannerImg: footprint,
+  title: "Reducing Our Footprint One Step at a Time",
+  pointerImg: footpointer,
+  description:
+    "Haldiram’s champions sustainability from sourcing to production, ensuring top quality while protecting the planet. With globally recognized certifications like HACCP, ISO 22000, BRC, and FSSC, our facilities uphold the highest safety and environmental standards. As a global leader in Indian snacks and sweets, we blend heritage with innovation, driving responsible manufacturing and sustainable growth.",
+  btntext: "Read More",
+};
+
+export const bannerData = {
+  overlayBannerImg:
+  bannerImage,
+  title: "A Legacy Built on Excellence & Trust",
+  description:
+    "What began in a small kitchen in Bikaner, Rajasthan has grown into a global phenomenon. Haldiram has been synonymous with authenticity, quality, and innovation for over seven decades, bringing families together with every bite.",
+    btntext:"Know More"
 };
