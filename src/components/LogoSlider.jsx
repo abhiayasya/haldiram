@@ -13,7 +13,7 @@ const LogoSlider = () => {
   return (
     <div className='p-7'>
       <div className=' mb-6 font-serif'>
-        <h3 className=' text-2xl md:text-[32px] font-normal uppercase my-3'>
+        <h3 className=' text-2xl md:text-lg font-normal uppercase my-3'>
           Haldiram is committed to the <br />
           <span className='text-[#B50020]'>HIGHEST STANDARDS</span> OF FOOD 
           <span className='text-[#B50020]'> SAFETY AND <br /> QUALITY</span> CONTROL

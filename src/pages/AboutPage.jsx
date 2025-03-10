@@ -7,12 +7,14 @@ import HomeRevenueCards from "../components/HomeRevenueCards";
 import HeroSlider from "../components/slider/HeroSlider";
 import { LOGO_SLIDER_JSON, slides } from "../constant/global.constant";
 import country from '../assets/country.png'
+import VisionMissionCard from "../components/VisionMissionCard";
 
 const AboutPage = () => {
   return (
     <div>
       <HeroSlider slides={slides} />
-      <VisionSection data={LOGO_SLIDER_JSON} />
+      {/* <VisionSection data={LOGO_SLIDER_JSON} /> */}
+      <VisionMissionCard data={LOGO_SLIDER_JSON}/>
       <Country data={country} />
       <AboutBannerTeaser />
       <LogoSlider />

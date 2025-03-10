@@ -6,6 +6,7 @@ const SocialMediaCard = ({
   showIcon,
   btnShow,
   visionMission,
+  img
 }) => {
   console.log(showIcon);
   return (
@@ -36,7 +37,7 @@ const SocialMediaCard = ({
             {name}
           </span>
           <div className="flex flex-col md:flex-row  items-center md:items-start gap-4 md:gap-1">
-            <img src={bgImg} width={124} height={124} alt="Vision" />
+            <img src={img} width={124} height={124} alt="Vision" />
             <p className="text-lg md:text-lg text-black font-normal text-center md:text-left">
               {description}
             </p>

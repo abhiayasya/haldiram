@@ -19,7 +19,9 @@ const HomePage = () => {
   return (
     <div>
       <HeroSlider slides={slides} />
-      <LatestNewsSection data={latestNewsSection} />
+      <MaxWidthContainer>
+        <LatestNewsSection data={latestNewsSection} />
+      </MaxWidthContainer>
       <MaxWidthContainer>
         <SocialMediaCards />
       </MaxWidthContainer>
