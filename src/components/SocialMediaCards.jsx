@@ -24,9 +24,9 @@ const socialMediaData = [
 const SocialMediaCards = () => {
   return (
     <div className="grid lg:grid-cols-2 gap-4  mx-auto">
-      {socialMediaData.map((platform) => (
+      {socialMediaData.map((platform,index) => (
         <SocialMediaCard
-          key={platform.id}
+          key={index}
           {...platform}
           showIcon={true}
           btnShow={true}
