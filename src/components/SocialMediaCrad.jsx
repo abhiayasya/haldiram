@@ -30,7 +30,7 @@ const SocialMediaCard = ({
       )}
 
       {!visionMission ? (
-        <p className="text-sm mt-2 max-w-[70%]">{description}</p>
+        <p className="text-sm mt-2">{description}</p>
       ) : (
         <div className="flex-1 bg-white p-4 rounded-2xl shadow-md border border-gray-200 flex flex-col">
           <span className="text-lg font-serif mb-3 tracking-wider text-black ">

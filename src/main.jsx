@@ -6,7 +6,6 @@ import AboutPage from "./pages/AboutPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import "../src/fonts/satoshi/css/satoshi.css"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

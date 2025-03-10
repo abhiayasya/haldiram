@@ -48,7 +48,7 @@ export default function HeroSlider({slides}) {
   const nextRef = useRef(null);
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="hero-slider relative w-full h-screen">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}

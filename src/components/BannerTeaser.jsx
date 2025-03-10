@@ -14,7 +14,7 @@ export default function BannerTeaser({ data }) {
           alt="Haldiram's"
           className="w-40 mx-auto mb-4"
         />
-
+ 
         <h1 className="text-2xl md:text-4xl font-semibold leading-tight">
           {data.heading.split("\n").map((line, index) => (
             <span key={index}>

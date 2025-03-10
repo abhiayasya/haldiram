@@ -12,26 +12,6 @@
   font-style: normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 
-{
+h1,h2,h3,h4,h5,h6 {
   font-family: "Coconat", sans-serif;
 }
-@font-face {
-  font-family: "Satoshi";
-  src: url("./fonts/satoshi/font/Satoshi-Regular.woff2") format("woff2"),
-    url("./fonts/satoshi/font/Satoshi-Regular.woff") format("woff"),
-    url("./fonts/satoshi/font/Satoshi-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-p,span,body,div
-{
-  font-family: "Satoshi", sans-serif;
-}
-
