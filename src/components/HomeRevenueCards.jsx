@@ -2,37 +2,8 @@ import React from "react";
 import revenueCard1 from "../assets/revenue1.png";
 import revenueCard2 from "../assets/revenue2.png";
 
-const REVENUE_JSON = [
-  {
-    supTag: "$01",
-    tagline: "BILLION",
-    title: "ANNUAL REVENUE",
-    description:
-      "The company boasts an annual revenue exceeding $1 billion, reflecting its significant market presence and consumer trust.",
-  },
-  {
-    supTag: "80+",
-    tagline: "COUNTRIES",
-    title: "GLOBAL REACH",
-    description:
-      "The brand's products are available in over 80 countries, showcasing its extensive international presence.",
-  },
-  {
-    supTag: "410",
-    tagline: "DISTINCT ITEMS",
-    title: "PRODUCT RANGE",
-    description:
-      "Offering more than 410 distinct items, Haldiram's caters to a wide array of consumer tastes and preferences.",
-  },
-  {
-    supTag: "3 LAC",
-    tagline: "",
-    title: "RETAIL NETWORK",
-    description:
-      "With a distribution network encompassing over 3 lakh retail outlets across 12 states in India, Haldiram's ensures widespread product availability.",
-  },
-];
-const HomeRevenueCards = () => {
+
+const HomeRevenueCards = ({data}) => {
   return (
     <div className="revenue-container p-7 flex flex-col md:flex-row items-center md:items-start bg-[#FAF5EF]">
       <div className="card-img md:w-[22%]">
@@ -41,7 +12,7 @@ const HomeRevenueCards = () => {
       </div>
 
       <div className="revenue-section md:w-[78%] mx-2 p-5 grid grid-cols-1 md:grid-cols-2 gap-y-6 items-center ">
-        {REVENUE_JSON.map((revenue, index) => (
+        {data.map((revenue, index) => (
           <div
             className="revenue-card pb-4 md:pb-10 md:nth-[1]:border-b md:nth-[2]:border-b border-gray-400 flex flex-col gap-y-2"
             key={index}

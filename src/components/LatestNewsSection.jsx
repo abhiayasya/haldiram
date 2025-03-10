@@ -1,37 +1,8 @@
 import React, { useState } from "react";
-import productImg from "../assets/image.png";
 
-const newsData = [
-  {
-    pretitle: "Press Release",
-    title:
-      "From Street Food to Snack Shelf: How Indian Street Snacks Became Pantry Staples",
-    date: "November 22, 2024",
-    image: productImg,
-  },
-  {
-    pretitle: "Press Release",
-    title:
-      "Deck the Halls with Delight With The Ultimate Sweet Platter for the Holidays",
-    date: "October 18, 2024",
-    image: productImg,
-  },
-  {
-    pretitle: "Press Release",
-    title: "Lazy? Busy? Hungry? Haldiram's UK Has the Perfect Meal for You!",
-    date: "October 15, 2024",
-    image: productImg,
-  },
-  {
-    pretitle: "Press Release",
-    title: "Deck the Halls with Delight With The Ultimate Sweet Platter for the Holidays",
-    date: "October 15, 2024",
-    image: productImg,
-  },
-];
 
-const LatestNewsSection = () => {
-  const [selectedNews, setSelectedNews] = useState(newsData[0]);
+const LatestNewsSection = ({data}) => {
+  const [selectedNews, setSelectedNews] = useState(data[0]);
 
   return (
     <section className="p-6 mx-auto">
@@ -55,7 +26,7 @@ const LatestNewsSection = () => {
 
         {/* Sidebar News List */}
         <div className="flex flex-col border-1 border-gray-200 border-l-0 h-full border-y-0">
-          {newsData.slice(1).map((news, index) => (
+          {data.slice(1).map((news, index) => (
             <div
               key={index}
               className="flex items-center p-3 border-b-1 border-gray-200 py-4 cursor-pointer hover:bg-gray-100"

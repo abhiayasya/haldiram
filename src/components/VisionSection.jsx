@@ -1,23 +1,8 @@
 import React from "react";
-import vision from "../assets/vision.png";
-import mission from "../assets/mission.png";
 
-export const LOGO_SLIDER_JSON = [
-  {
-    tagline: "Our Vision",
-    img: vision,
-    description:
-      "To share the rich and flavorful tapestry of Indian cuisine with the world, in its purest and most delicious form.",
-  },
-  {
-    tagline: "Our Mission",
-    img: mission,
-    description:
-      "To be the most preferred destination for authentic Indian cuisine,leveraging our heritage and a passionate global network.",
-  },
-];
 
-const VisionSection = () => {
+
+const VisionSection = ({data}) => {
   return (
     <div className="w-full p-7 bg-[#FAF5EF]">
       <div className=" mb-8">
@@ -35,7 +20,7 @@ const VisionSection = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-10">
-        {LOGO_SLIDER_JSON.map((logoslider, index) => (
+        {data.map((logoslider, index) => (
           <div
             className="flex-1 bg-white p-4 rounded-2xl shadow-md border border-gray-200 flex flex-col"
             key={index}

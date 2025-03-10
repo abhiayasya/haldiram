@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "./herobanner.css"
+import "./heroSlider.css"
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
@@ -43,7 +43,7 @@ const slides = [
   // Add more slides as needed
 ];
 
-export default function HeroSlider() {
+export default function HeroSlider({slides}) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 

@@ -1,10 +1,9 @@
 import React from 'react'
-import country from '../assets/country.png'
 
-const Country = () => {
+const Country = ({data}) => {
   return (
     <div className='country-container my-10'>
-      <img src={country} alt="" />
+      <img src={data} alt="" />
     </div>
   )
 }

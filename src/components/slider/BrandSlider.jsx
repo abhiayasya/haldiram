@@ -8,19 +8,8 @@ import "swiper/css/thumbs";
 // import "../index.css";
 import "./brandSlider.css"
  
-// Swiper Images
-const images = [
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-  "https://www.haldiram.com/media/wysiwyg/homepage/web_banner_1_1_1_1.jpg",
-];
- 
-const BrandSlider = () => {
+
+const BrandSlider = ({data}) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0); // Track the active slide
  
@@ -38,7 +27,7 @@ const BrandSlider = () => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="w-full h-full"
       >
-        {images.map((img, index) => (
+        {data.map((img, index) => (
           <SwiperSlide key={index} className="relative">
             {/* Background Image */}
             <img src={img} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
@@ -68,7 +57,7 @@ const BrandSlider = () => {
           modules={[FreeMode, Navigation, Thumbs]}
           className="mySwiper w-[90%] sm:w-2/3"
         >
-          {images.map((img, index) => (
+          {data.map((img, index) => (
             <SwiperSlide key={index} className="cursor-pointer transition-opacity duration-300">
               <img
                 src={img}
