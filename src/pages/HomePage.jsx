@@ -28,6 +28,7 @@ const HomePage = () => {
       <section className="my-20">
         <BrandSlider data={brandImages} />
       </section>
+      {/* <Dropdown/> */}
     </div>
   );
 };
