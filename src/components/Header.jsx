@@ -31,9 +31,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"
-      } py-4 px-6`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        isScrolled ? "bg-white text-black shadow-md py-2 px-6 ease-in-out" : "bg-transparent text-white py-3 px-6 ease-in-out"
+      } `}
     >
       <div className="container mx-auto flex items-center justify-between gap-5">
         {/* Left Section (Logo + Mobile Menu Button) */}
