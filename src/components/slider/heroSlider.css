@@ -1,17 +1,14 @@
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    transform: rotate(90deg) !important;
-    position: absolute !important;
-    top: 50% !important;
-    /* background: white; */
-    height: 2% !important;
+.hero-slider .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    height: 2%;
     width: 300px ;
     left: 88%;
 }
-.swiper-pagination-bullet{
-    width: 32px !important;
-    background-color: white !important;
-}
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background-color: red !important;
-
+.hero-slider .swiper-pagination-bullet{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 0;
 }
