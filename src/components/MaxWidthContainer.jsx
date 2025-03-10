@@ -6,7 +6,7 @@ const MaxWidthContainer = ({ children, className, img }) => {
       className={`${className} w-full`}
       style={ img ? { backgroundImage: `url(${img})` }:{}}
     >
-      <div className="max-w-[1440px] mx-auto">{children}</div>
+      <div className="max-w-[1280px] mx-auto">{children}</div>
     </div>
   );
 };
