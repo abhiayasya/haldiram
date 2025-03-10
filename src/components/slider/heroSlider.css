@@ -1,0 +1,17 @@
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    transform: rotate(90deg) !important;
+    position: absolute !important;
+    top: 50% !important;
+    /* background: white; */
+    height: 2% !important;
+    width: 300px ;
+    left: 88%;
+}
+.swiper-pagination-bullet{
+    width: 32px !important;
+    background-color: white !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: red !important;
+
+}
