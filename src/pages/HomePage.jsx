@@ -8,6 +8,7 @@ import HeroSlider from "../components/slider/HeroSlider";
 import HomeRevenueCards from "../components/HomeRevenueCards";
 import { bannerData, brandImages, latestNewsSection, revenueJson, slides } from "../constant/global.constant";
 import SocialMediaCards from "../components/SocialMediaCards";
+import OverlayCommonTeaserBanner from "../components/OverlayCommonTeaserBanner";
 
 const HomePage = () => {
   return (
@@ -18,7 +19,7 @@ const HomePage = () => {
       <SocialMediaCards/>
       </section>
      
-      <BannerTeaser data={bannerData} />
+      <OverlayCommonTeaserBanner data={bannerData}/>
       <HomeRevenueCards data={revenueJson} />
       
       <section className="my-20">
