@@ -1,0 +1,14 @@
+.hero-slider .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    height: 2%;
+    width: 300px ;
+    left: 88%;
+}
+.hero-slider .swiper-pagination-bullet{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 0;
+}

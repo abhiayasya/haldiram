@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Coconat";
+  src: url("./fonts/coconat/Coconat-BoldExt.otf") format("opentype"),
+    url("./fonts/coconat/Coconat-BoldExt.woff") format("woff"),
+    url("./fonts/coconat/Coconat-BoldExt.woff2") format("woff2"),
+    url("./fonts/coconat/Coconat-Regular.otf") format("opentype"),
+    url("./fonts/coconat/Coconat-Regular.woff") format("woff"),
+    url("./fonts/coconat/Coconat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Coconat", sans-serif;
+}
