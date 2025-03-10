@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Globe, Mail, Search } from "lucide-react";
-import HaldiramLogo from "../assets/icon/Haldiram_Logo.webp";
+import HaldiramLogo from "../assets/icon/Haldiram_Logo.png";
+import Dropdown from "./Dropdown";
 
 const menuItems = [
   { name: "BUSINESS", link: "/business" },
@@ -30,6 +31,7 @@ const Header = () => {
   }, []);
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"
@@ -100,6 +102,8 @@ const Header = () => {
         </div>
       )}
     </header>
+    
+    </>
   );
 };
 
