@@ -49,19 +49,19 @@ const LatestNewsSection = () => {
               className="w-full object-cover h-full"
             />
           </div>
-          <div className="p-4 lg:w-[60%] border-1 border-gray-200 border-y-0 flex flex-col justify-between">
+          <div className="p-4 lg:w-[50%] border-r-0 border-1 border-gray-200 border-y-0 flex flex-col justify-evenly">
             <div>
               {" "}
               <h3 className="text-lg mb-5 text-[#9c6f4d]">
                 {selectedNews.pretitle}
               </h3>
-              <h2 className="text-[28px] font-semibold mb-5">
+              <h2 className="text-[32px] leading-[40px] pr-4 font-semibold mb-5 max-w-[350px]">
                 {selectedNews.title}
               </h2>
-              <p className="text-gray-500 text-sm mb-5">{selectedNews.date}</p>
+              <p className="text-gray-500 text-sm mb-5 mt-5 ">{selectedNews.date}</p>
             </div>
             <div>
-              <button className="mt-3 text-xl text-[#9c6f4d] gap-5 flex items-center">
+              <button className="pt-18 text-xl text-[#9c6f4d] gap-5 flex items-center">
                 <span>Read More</span>
                 <span className="w-[30px] h-[30px] rounded-[50%] bg-[#9c6f4d] text-white flex justify-center">
                   {" "}
@@ -78,7 +78,7 @@ const LatestNewsSection = () => {
           {newsData.slice(1).map((news, index) => (
             <div
               key={index}
-              className="flex items-center p-3 border-b-1 border-gray-200 last:border-b-0 py-2 cursor-pointer hover:bg-gray-100"
+              className="flex items-center p-3 border-b-1 border-gray-200 last:border-b-0 py-6 cursor-pointer hover:bg-gray-100"
               onClick={() => setSelectedNews(news)}
             >
               <img
@@ -94,7 +94,7 @@ const LatestNewsSection = () => {
           ))}
           </div>
        
-          <div className="text-right py-6 bg-[#F7EBE1] mt-auto">
+          <div className="text-right py-6 bg-[#F7EBE1] ">
             <button className="text-xl text-[#9c6f4d] gap-5 flex items-center px-5">
               <span>View All</span>
               <span className="w-[30px] h-[30px] rounded-[50%] bg-[#9c6f4d] text-white flex justify-center">
