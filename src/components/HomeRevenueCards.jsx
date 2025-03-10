@@ -34,15 +34,18 @@ const REVENUE_JSON = [
 ];
 const HomeRevenueCards = () => {
   return (
-    <div className="revenue-container p-7 flex flex-col md:flex-row gap-3 items-start bg-[#FAF5EF]">
-      <div className="card-img md:w-[20%]">
+    <div className="revenue-container p-7 flex flex-col md:flex-row items-center md:items-start bg-[#FAF5EF]">
+      <div className="card-img md:w-[22%]">
         <img src={revenueCard1} width={324} height={324} alt="" />
         <img src={revenueCard2} width={324} height={324} alt="" />
       </div>
 
-      <div className="revenue-section md:w-[80%] p-5 grid gap-4 grid-cols-1 md:grid-cols-2 gap-y-12 items-center ">
+      <div className="revenue-section md:w-[78%] mx-2 p-5 grid grid-cols-1 md:grid-cols-2 gap-y-6 items-center ">
         {REVENUE_JSON.map((revenue, index) => (
-          <div className="revenue-card p-2 flex flex-col gap-y-2" key={index}>
+          <div
+            className="revenue-card pb-4 md:pb-10 md:nth-[1]:border-b md:nth-[2]:border-b border-gray-400 flex flex-col gap-y-2"
+            key={index}
+          >
             <div className="mb-2 space-y-2">
               <h3 className="font-light text-2xl uppercase tracking-wider">
                 <span className="text-5xl font-normal">{revenue.supTag}</span>
