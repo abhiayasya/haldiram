@@ -15,7 +15,7 @@ const LatestNewsSection = ({ data }) => {
             <img
               src={selectedNews.image}
               alt="Featured News"
-              className="w-full object-cover h-full"
+              className="w-full  h-full"
             />
           </div>
           <div className="p-4 lg:w-[60%] border-1 border-gray-200 border-y-0 flex flex-col justify-between">
